@@ -1341,6 +1341,15 @@
                 });
             });
 
+            // Add event listener for finger capture button
+            captureFingerBtn.addEventListener('click', function() {
+                openCamera('finger', 'finger-placeholder');
+            });
+
+            // Add event listener for finger recapture button
+            recaptureFingerBtn.addEventListener('click', function() {
+                openCamera('finger', 'finger-placeholder');
+            });
             closeCamera.addEventListener('click', closeCameraHandler);
 
             // Capture image
